@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - MySongApp</title>
+    <link rel="stylesheet" href="style.min.css">
+</head>
+
+<body>
+    <nav>
+        <ul id="navbarItems">
+            <li>
+                <img src="logo.png" alt="Spotify Logo">
+                <span>Spotify</span>
+            </li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="songListsDiv">
+            <h2>Song Album Name</h2>
+            <span id="set_song_duration" style="color: white;">set song duration</span>
+            <div class="songListsItems">
+                <div class="songItem">
+                    <div class="songItemImage">
+                        <img alt="Cover 1">
+                    </div>
+                    <div class="songName">
+                        Song Name
+                    </div>
+                    <div class="songDetails">
+                        <span class="song-duration">6:14</span>
+                        <div class="item_play_pause">
+                            <img class="user_action play" src="play-solid.svg" alt="Play Button">
+                            <img class="user_action pause" src="pause-solid.svg" alt="Pause Butotn">
+                        </div>
+                    </div>
+                </div>
+                <div class="songItem">
+                    <div class="songItemImage">
+                        <img alt="Cover 1">
+                    </div>
+                    <div class="songName">
+                        Song Name
+                    </div>
+                    <div class="songDetails">
+                        <span class="song-duration">3:04</span>
+                        <div class="item_play_pause">
+                            <img class="user_action play" src="play-solid.svg" alt="Play Button">
+                            <img class="user_action pause" src="pause-solid.svg" alt="Pause Butotn">
+                        </div>
+                    </div>
+                </div>
+                <div class="songItem">
+                    <div class="songItemImage">
+                        <img alt="Cover 1">
+                    </div>
+                    <div class="songName">
+                        Song Name
+                    </div>
+                    <div class="songDetails">
+                        <span class="song-duration">5:34</span>
+                        <div class="item_play_pause">
+                            <img class="user_action play" src="play-solid.svg" alt="Play Button">
+                            <img class="user_action pause" src="pause-solid.svg" alt="Pause Butotn">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="songBackGround"></div>
+    </div>
+
+    <div class="playBackInfo">
+        <input type="range" name="range" id="progressBar" min="0" value="0" max="100">
+        <div id="masterControl">
+            <div id="masterControlLeft">
+                <img src="playing.gif" alt="Song Play..." id="songPlayGif">
+                <span id="masterSongName">Warriyo - Mortals [NCS Release]</span>                
+            </div>
+            <div class="songActions">
+                <img id="previous" class="user_action backward" src="backward-solid.svg" alt="Backward Butotn">
+                <img class="user_action master_play_pause play" src="play-solid.svg" alt="Play Button">
+                <img class="user_action master_play_pause pause" src="pause-solid.svg" alt="Pause Butotn">
+                <img id="next" class="user_action forward" src="forward-solid.svg" alt="Backward Butotn">
+            </div>
+        </div>
+    </div>
+    <div id="createdCredit">
+        <img id="myPhoto" src="my_pic.jpg" alt="Maruf Hossain Rafsan">
+        <p id="createdCreditContent">Created By
+            <a href="https://www.facebook.com/marufrafsan35/">
+                <img src="fb-icon.svg" alt="Facebook Icon" width="18px" height="18px"> Maruf Hossain Rafsan
+            </a>
+        </p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: antiquewhite;
+}
+nav{
+    color: white;
+}
+nav ul{
+    background-color: black;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    li{
+        list-style-type: none;
+        padding: 5px 15px;
+        cursor: pointer;
+        &:first-child{
+            display: flex;
+            align-items: center;
+            img{
+                width: 30px;
+
+            }
+            span{
+                padding: 0 6px;
+            }            
+        }
+    }
+}
+
+.container{
+    min-height: 75vh;
+    width: 75%;
+    margin: 5px auto;
+    padding: 5px;
+    background-image: url('../bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+.songListsDiv{
+    width: 50%;
+    margin: 5px 10px;
+    h1, h2, h3{
+        color: white;
+        margin: 5px 0px;
+    }
+}
+.songItem{
+    background-color: white;
+    border-radius: 50px;
+    margin: 5px 0px;
+    padding: 5px 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .songDetails{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img{
+            width: 0.8rem;
+        }        
+    }
+}
+.songItemImage {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    img {
+        height: 1.2rem;
+        width: 1.2rem;
+        border-radius: 100%;
+    }
+}
+.songBackGround{
+    width: 50%;
+}
+
+.playBackInfo{
+    background-color: rgb(110, 106, 106);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 5rem;
+    input{
+        width: 80%;
+        margin: 5px;
+        padding: 0 auto;
+        cursor: pointer;
+    }
+    .songActions{
+        cursor: context-menu;
+        margin: 5px 0px;
+        #backward{
+            width: 1.3rem;            
+        }        
+        #forward{
+            width: 1.3rem;            
+
+        }
+    }
+    #masterControl{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        #masterControlLeft{
+            width: 50%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;       
+        }
+        #songPlayGif{
+            margin-right: 10px;
+            width: 6rem;
+            height: 2rem;
+            opacity: 0;
+            transition: opacity 0.3s ease-in;
+        }
+    }
+}
+
+.user_action {
+    height: 1.5rem;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+.play{
+    width: 1rem;
+}
+.pause{
+    width: 1rem;
+    display: none;
+}
+
+#createdCredit{
+    margin: 5px 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: end;
+    #createdCreditContent{
+        margin: 0px 10px;
+        a{
+            text-underline-offset: 2px;
+        }
+    }
+    #myPhoto{
+        width: 2rem;
+        border-radius: 100%;
+    }
+}
